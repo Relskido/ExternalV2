@@ -40,6 +40,8 @@ int main()
 
     std::cout << "[+] Found Datamodel. 0x" << std::hex << DataModel << std::endl;
 
+	uintptr_t Workspace = FindFirstChild(DataModel, "Workspace");
+
     // yeah yeah ik this shi is like the ExternalV1 but idk any other way
     uintptr_t Players = FindFirstChild(DataModel, "Players");
     if (!Players)
@@ -82,13 +84,14 @@ int main()
     uintptr_t WalkspeedCheck = read<uintptr_t>(Humanoid + offsets::WalkSpeedCheck);
     uintptr_t JumpPower = read<uintptr_t>(Humanoid + offsets::JumpPower);
 
-    std::cout << "[*] Current Walkspeed: 0x" << Walkspeed << std::endl;
-    std::cout << "[*] Current WalkspeedCheck: 0x" << WalkspeedCheck << std::endl;
-    std::cout << "[*] Current JumpPower: 0x" << JumpPower << std::endl;
+    std::cout << "[*] Current Walkspeed: " << Walkspeed << std::endl;
+    std::cout << "[*] Current WalkspeedCheck: " << WalkspeedCheck << std::endl;
+    std::cout << "[*] Current JumpPower: " << JumpPower << std::endl;
 
-    write<float>(Humanoid + offsets::WalkSpeed, 200.0f); // Set Walkspeed to 200
+	write<float>(Humanoid + offsets::WalkSpeed, 200.0f); // Set Walkspeed to 200
     write<float>(Humanoid + offsets::WalkSpeedCheck, 200.0f); // Set WalkspeedCheck to 200 for kick preventing
     write<float>(Humanoid + offsets::JumpPower, 200.0f); // Set JumpPower to 200
+    write<float>(Workspace + offsets::Gravity, 50.0f); // Set Gravity to 50
 
     std::cout << "[+] New Walkspeed: " << read<uintptr_t>(Humanoid + offsets::WalkSpeed) << std::endl;
     
