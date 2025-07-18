@@ -25,3 +25,5 @@ Mapper: https://github.com/TheCruZ/kdmapper
 - Use This At Your Own Risk
 - We do not Encourage , condone or Support Exploiting That Breaks Roblox TOS
 - This Upload is for Educational Purposes Only
+
+- This External is Part of my Learning journey
