@@ -9,6 +9,7 @@
 - User-Mode
 - Free to Use (know the risk)
 - WalkSpeed and JumpPower Changer
+- Added Gravity Changer
 
 ## Whats Next?
 - Im Planing to add ImGui and Esp Soon and also health changer
