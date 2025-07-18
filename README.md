@@ -8,7 +8,7 @@
 ## About this
 - User-Mode
 - Free to Use (know the risk)
-- Simple WalkSpeed and JumpPower Changer
+- WalkSpeed and JumpPower Changer
 
 ## Whats Next?
 - Im Planing to add ImGui and Esp Soon and also health changer
