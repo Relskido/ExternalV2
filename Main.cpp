@@ -86,7 +86,7 @@ int main()
     std::cout << "[*] Current WalkspeedCheck: " << WalkspeedCheck << std::endl;
     std::cout << "[*] Current JumpPower: " << JumpPower << std::endl;
 
-	write<float>(Humanoid + offsets::WalkSpeed, 200.0f); // Set Walkspeed to 200
+    write<float>(Humanoid + offsets::WalkSpeed, 200.0f); // Set Walkspeed to 200
     write<float>(Humanoid + offsets::WalkSpeedCheck, 200.0f); // Set WalkspeedCheck to 200 for kick preventing
     write<float>(Humanoid + offsets::JumpPower, 200.0f); // Set JumpPower to 200
 
