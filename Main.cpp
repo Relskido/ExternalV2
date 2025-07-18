@@ -82,9 +82,9 @@ int main()
     uintptr_t WalkspeedCheck = read<uintptr_t>(Humanoid + offsets::WalkSpeedCheck);
     uintptr_t JumpPower = read<uintptr_t>(Humanoid + offsets::JumpPower);
 
-    std::cout << "[*] Current Walkspeed: " << Walkspeed << std::endl;
-    std::cout << "[*] Current WalkspeedCheck: " << WalkspeedCheck << std::endl;
-    std::cout << "[*] Current JumpPower: " << JumpPower << std::endl;
+    std::cout << "[*] Current Walkspeed: 0x" << Walkspeed << std::endl;
+    std::cout << "[*] Current WalkspeedCheck: 0x" << WalkspeedCheck << std::endl;
+    std::cout << "[*] Current JumpPower: 0x" << JumpPower << std::endl;
 
     write<float>(Humanoid + offsets::WalkSpeed, 200.0f); // Set Walkspeed to 200
     write<float>(Humanoid + offsets::WalkSpeedCheck, 200.0f); // Set WalkspeedCheck to 200 for kick preventing
