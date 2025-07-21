@@ -7,6 +7,7 @@
 #include <vector>
 #include <cstdint>
 
+// i forgot to add gravity im sorry
 namespace offsets {
     inline constexpr uintptr_t FakeDataModelPointer = 0x6833728;
     inline constexpr uintptr_t FakeDataModelToDataModel = 0x1C0;
