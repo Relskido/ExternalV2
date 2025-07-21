@@ -1,12 +1,14 @@
+### I Will rewrite this to make it cleaner better and with gui but maybe custom driver??? idk really
+
 # ExternalV2
 
 ## Information
 - Updated: Yes
-- Detected: Yep cuz usermode is detected
+- Detected: Yep cuz kernel is detected
 - Version: version-225e87fdb7254f64
 
 ## About this
-- User-Mode
+- kernel
 - Free to Use (know the risk)
 - WalkSpeed and JumpPower Changer
 - Added Gravity Changer
